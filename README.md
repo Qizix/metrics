@@ -8,15 +8,15 @@ This project explores the implementation of basic machine learning metrics from 
 
 ### 📈 **Regression Metrics**
 - **RMSE** (Root Mean Square Error)
-~~- **MAE** (Mean Absolute Error)~~
-~~- **MSE** (Mean Squared Error)~~
-~~- **R²** (Coefficient of Determination)~~
+- ~~**MAE** (Mean Absolute Error)~~
+- ~~**MSE** (Mean Squared Error)~~
+- ~~**R²** (Coefficient of Determination)~~
 
 ### 📊 **Classification Metrics**
-~~- **Accuracy**~~
-~~- **Precision**~~
-~~- **Recall**~~
-~~- **F1-Score**~~
+- ~~**Accuracy**~~
+- ~~**Precision**~~
+- ~~**Recall**~~
+- ~~**F1-Score**~~
 
 ---
 
