@@ -12,3 +12,7 @@ def rmse(y_true, y_pred):
     Returns:
     float: RMSE value.
     """
+    
+    return np.sqrt(np.mean((y_true - y_pred) ** 2))
+    
+    
