@@ -85,3 +85,20 @@ def precicion(y_true, y_pred):
     
     return true_positives / (true_positives + false_positive)    
     
+def f1(y_true, y_pred):
+    """
+    Calculate the f1 of the model.
+    
+    Parameters:
+    y_true (list or np.array): Actual values (ground truth).
+    y_pred (list or np.array): Predicted values.
+    
+    Returns:
+    float: F1 value.
+    """
+    
+    true_positives = np.sum((y_true == 1) & (y_pred == 1))
+    false_positive = np.sum((y_true == 0) & (y_pred == 1))
+    false_negatives = np.sum((y_true == 1) & (y_pred == 0))
+    
+    return true_positives / (true_positives + (false_positive + false_negatives) / 2)   

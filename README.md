@@ -16,7 +16,7 @@ This project explores the implementation of basic machine learning metrics from 
 - **Accuracy**
 - **Precision**
 - **Recall**~~
-- ~~**F1-Score**~~
+- **F1-Score**
 
 <p align="center"> Made with ❤️ for learning </p> 
 
