@@ -30,6 +30,37 @@ def mae(y_true, y_pred):
     
     return np.mean(np.abs(y_true - y_pred)) 
 
+def mse(y_true, y_pred):
+    """
+    Calculate the Mean Squared Error (MSE).
+    
+    Parameters:
+    y_true (list or np.array): Actual values.
+    y_pred (list or np.array): Predicted values.
+    
+    Returns:
+    float: MSE value.
+    """
+    
+    return np.mean((y_true - y_pred) ** 2)
+
+def r_squared(y_true, y_pred):
+    """
+    Calculate the Coefficient of Determination (R²).
+    
+    Parameters:
+    y_true (list or np.array): Actual values.
+    y_pred (list or np.array): Predicted values.
+    
+    Returns:
+    float: R² value.
+    """
+    
+    ss_total = np.sum((y_true - np.mean(y_true)) ** 2)
+    ss_residual = np.sum((y_true - y_pred) ** 2)
+    
+    return 1 - (ss_residual / ss_total) if ss_total != 0 else 0.0
+
  # Classification
  
 def accuracy(y_true, y_pred):
@@ -102,3 +133,4 @@ def f1(y_true, y_pred):
     false_negatives = np.sum((y_true == 1) & (y_pred == 0))
     
     return true_positives / (true_positives + (false_positive + false_negatives) / 2)   
+
